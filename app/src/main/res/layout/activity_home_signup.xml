@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeSignup">
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/amily">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/notif"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginStart="@dimen/_210sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:outlineSpotShadowColor="#FAF10A0A"
+                android:src="@drawable/wid"
+                app:backgroundTint="@color/white"
+                app:elevation="8sp"
+                app:tint="#CA0909">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/list"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginStart="@dimen/_250sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:outlineSpotShadowColor="#FA0A30F1"
+                android:src="@drawable/get"
+                app:backgroundTint="@color/white"
+                app:elevation="8sp"
+                app:tint="#0B0ED8">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/josefin_sans"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:textSize="38dp"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backblur"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:drawableRight="@drawable/tick"
+                    android:fontFamily="@font/josefin_sans"
+                    android:hint="Xyz123"
+                    android:textSize="20dp"></EditText>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/josefin_sans"
+                        android:text="Left"
+                        android:background="@drawable/ic_ovalbtn"
+                        android:textAlignment="center"
+                        android:padding="@dimen/_15sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/btright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:fontFamily="@font/josefin_sans"
+                        android:text="Right"
+                        android:background="@drawable/ic_ovalbtn"
+                        android:padding="@dimen/_15sdp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btconfirm"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/ic_confirmpassbtn"
+                    android:fontFamily="@font/josefin_sans"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:text="CONFIRM"
+                    android:textColor="#0E1C75"
+                    android:textSize="16dp"></Button>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </eightbitlab.com.blurview.BlurView>
+
+</RelativeLayout>

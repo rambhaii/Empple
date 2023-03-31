@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenfirst"
+    tools:context=".Intro">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageslider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sliderIndicatorGravity="bottom"
+        app:sliderIndicatorMargin="@dimen/_10sdp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="@dimen/_2sdp"
+        app:sliderIndicatorRadius="@dimen/_2sdp" />
+
+    <TextView
+        android:id="@+id/slidertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:fontFamily="@font/playfair_display"
+        android:text="Fashion"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_26sdp" />
+    <TextView
+        android:id="@+id/slidetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:fontFamily="@font/playfair_display"
+        android:text="as you need"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_26sdp" />
+
+
+   <!-- <ss.com.bannerslider.Slider
+        android:id="@+id/bannerslider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:slider_indicatorSize="@dimen/_8sdp"
+
+        app:slider_selectedSlideIndicator="@drawable/dash"
+        app:slider_unselectedSlideIndicator="@drawable/dotimg" />
+
+   <ss.com.bannerslider.indicators.RoundSquareIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/indicator"/> -->
+
+
+    <ImageButton
+        android:id="@+id/hoverback"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:background="@null"
+        android:src="@drawable/ic_arrow" />
+
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_255sdp"
+        android:layout_marginTop="@dimen/_550sdp"
+        android:fontFamily="@font/playfair_display"
+        android:text="skip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    tools:context=".Dashboard">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:id="@+id/relative"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_230sdp"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/topleft"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:background="@drawable/quadrant">
+
+                <ImageView
+                    android:id="@+id/ivtopleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/iconic_ios_people" />
+
+                <ImageView
+                    android:id="@+id/imgtopleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/iconic_ios_person_add"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tvtopleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivtopleft"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/josefin_sans"
+                    android:text="2587 Friends"
+                    android:textSize="@dimen/_8ssp" />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_below="@+id/topleft"
+                android:layout_width="@dimen/_210sdp"
+                android:id="@+id/view1"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@drawable/viewbackground"
+                />
+            <View
+                android:layout_toRightOf="@id/topleft"
+                android:layout_width="@dimen/_1sdp"
+                android:id="@+id/view2"
+                android:layout_height="@dimen/_210sdp"
+                android:background="@drawable/viewbackground"
+                />
+
+            <RelativeLayout
+                android:id="@+id/topright"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_toRightOf="@+id/view2"
+
+                android:background="@drawable/toprightquadrant">
+
+                <ImageView
+                    android:id="@+id/ivtopright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_coins" />
+
+                <ImageView
+                    android:id="@+id/imgtopright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_wallet"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tvtopright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivtopright"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/josefin_sans"
+                    android:text="130000 Earn Point"
+                    android:textSize="@dimen/_8ssp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomleft"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_below="@+id/view1"
+                android:background="@drawable/bottomleftquadrant">
+
+                <ImageView
+                    android:id="@+id/ivbottomleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_baseline_equals" />
+
+                <ImageView
+                    android:id="@+id/imgbottomleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_baseline_equals"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tvbottomleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivbottomleft"
+                    android:layout_centerInParent="true"
+                    android:text="1637 Match"
+                    android:fontFamily="@font/josefin_sans"
+                    android:textSize="@dimen/_8ssp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_toRightOf="@+id/view2"
+                android:layout_below="@+id/view1"
+                android:background="@drawable/bottomrightquadrant"
+                android:id="@+id/bottomRight"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ivbottomRight"
+                    android:src="@drawable/clipboard_list"
+                    android:layout_centerInParent="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgbottomright"
+                    android:src="@drawable/ic_listbox"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R 450 : L 347"
+                    android:fontFamily="@font/josefin_sans"
+                    android:textSize="@dimen/_8ssp"
+                    android:id="@+id/tvbottomRight"
+                    android:layout_below="@id/ivbottomRight"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_230sdp"
+            android:gravity="center"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:src="@drawable/profiledemopic"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/frameLayoutFragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

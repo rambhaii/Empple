@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Notification"
+            android:textColor="#FFB400"
+            android:textSize="@dimen/_28sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Push Notification"
+                    android:textSize="@dimen/_15sdp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"></androidx.appcompat.widget.SwitchCompat>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Recommended Items"
+                    android:textSize="@dimen/_15sdp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_37sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"></androidx.appcompat.widget.SwitchCompat>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Trend Notification"
+                    android:textSize="@dimen/_15sdp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_55sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"></androidx.appcompat.widget.SwitchCompat>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Promotion"
+                    android:textSize="@dimen/_15sdp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_102sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"></androidx.appcompat.widget.SwitchCompat>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </eightbitlab.com.blurview.BlurView>
+
+
+   </RelativeLayout>
+
+

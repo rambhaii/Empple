@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/bckroundmain"
+    tools:context=".Register">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp" />
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/bk1"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="start"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitStart"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/mainarrow"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/josefin_sans"
+                android:gravity="start"
+                android:text="Getting Started"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/desc"
+                style="@style/Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Enter the user id associated \n with your account"
+                android:textAlignment="center"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linespacing"
+                android:hint="Reference User Id"
+                android:padding="@dimen/_10sdp"
+                android:editable="false"
+                android:focusable="false"
+                android:fontFamily="@font/josefin_sans"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:maxLength="10"
+                android:layout_marginStart="@dimen/_30sdp"/>
+
+            <EditText
+                android:id="@+id/refid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linespacing"
+                android:hint="User Id"
+                android:visibility="gone"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/josefin_sans"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:maxLength="10"
+                android:layout_marginStart="@dimen/_30sdp"/>
+
+
+
+
+            <Button
+                android:id="@+id/cbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userid"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/ic_confirmpassbtn"
+                android:fontFamily="@font/josefin_sans"
+                android:paddingBottom="@dimen/_4ssp"
+                android:text="Confirm"
+                android:textColor="@color/violet" />
+
+
+            <LinearLayout
+                android:id="@+id/relativedesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/a1"
+                    style="@style/Heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:fontFamily="@font/josefin_sans"
+                    android:text="Don't have a reference id?"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/clkhere"
+                    style="@style/Heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/josefin_sans"
+                    android:text="Click here"
+                    android:textColor="@color/aqua"
+                    android:textSize="@dimen/_10ssp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/transitionsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sinup"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:src="@drawable/sinup" />
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </eightbitlab.com.blurview.BlurView>
+</RelativeLayout>

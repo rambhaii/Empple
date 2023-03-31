@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckroundmain"
+    android:orientation="vertical"
+    tools:context=".CartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/reverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            style="@style/Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="CART"
+            android:textSize="@dimen/_20ssp" />
+    </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="8"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="120dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="7">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Round neck cotton t-shirt"
+                android:textColor="#707070"
+                android:fontFamily="@font/josefin_sans"
+                android:textSize="@dimen/_16sdp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="L"
+                android:fontFamily="@font/josefin_sans"
+                android:textSize="20dp"
+                android:textColor="#707070" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_160sdp"
+                    android:src="@drawable/ic_baseline_delete_24"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/subsize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X 1"
+                android:fontFamily="@font/josefin_sans"
+                android:textSize="20dp"
+                android:textColor="#707070" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/rupee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rupee"
+                android:fontFamily="@font/josefin_sans"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#707070" />
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:fontFamily="@font/josefin_sans"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="8"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="120dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="7">
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Round neck cotton t-shirt"
+                    android:textColor="#707070"
+                    android:fontFamily="@font/josefin_sans"
+                    android:textSize="@dimen/_16sdp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/size2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="L"
+                        android:fontFamily="@font/josefin_sans"
+                        android:textSize="20dp"
+                        android:textColor="#707070" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_160sdp"
+                        android:src="@drawable/ic_baseline_delete_24"/>
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/subsize2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="X 1"
+                    android:fontFamily="@font/josefin_sans"
+                    android:textSize="20dp"
+                    android:textColor="#707070" />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/rupee2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rupee"
+                        android:fontFamily="@font/josefin_sans"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="#707070" />
+                    <TextView
+                        android:id="@+id/price2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="500"
+                        android:fontFamily="@font/josefin_sans"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="horizontal"
+       android:background="@drawable/whiterecbox">
+
+    <EditText
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:fontFamily="@font/josefin_sans"
+        android:theme="@style/underline"
+        android:padding="@dimen/_10sdp"
+        android:hint="Gift Card or Promo Code"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/_10sdp"
+           android:textSize="@dimen/_15sdp"
+           android:fontFamily="@font/josefin_sans"
+           android:textColor="@color/black"
+           android:text="APPLY"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16sdp"
+        android:text="Total Price"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rupee"
+            android:fontFamily="@font/josefin_sans"
+            android:layout_marginStart="@dimen/_120sdp"
+            android:textColor="#A9FF0000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="700"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".00"
+            android:textStyle="bold"
+            android:fontFamily="@font/josefin_sans"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="BUY NOW"
+        android:textColor="#1200FF"
+        android:fontFamily="@font/josefin_sans"
+        android:background="@drawable/btn2"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_auto_image_slider"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/bnra"
+        android:layout_marginLeft="@dimen/_110sdp"
+        android:scaleType="fitXY" />
+
+
+        <ImageView
+            android:stateListAnimator="@anim/bottom"
+            android:id="@+id/iv_gif_container"
+            android:layout_width="130dp"
+            android:layout_height="270dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bnra"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_110sdp" />
+        <ImageView
+            android:id="@+id/vv"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+           android:layout_below="@+id/iv_auto_image_slider"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/bnra"
+
+            />
+        <TextView
+            android:id="@+id/winter"
+            android:layout_marginTop="-20dp"
+            android:layout_below="@+id/iv_gif_container"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/ovalwinter"
+            android:fontFamily="@font/playfair_display"
+            android:padding="@dimen/_10sdp"
+            android:textAlignment="center"
+            android:text="Winter?"
+            android:textColor="#00E5FF"
+            android:textSize="@dimen/_22sdp" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_shadow_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_70sdp"
+       >
+
+        <TextView
+            android:id="@+id/collection"
+            style="@style/Heading"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:fontFamily="@font/playfair_display"
+            android:padding="@dimen/_2sdp"
+            android:text="New Collection"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22sdp" />
+
+
+    </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_auto_image_slider1"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_450sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/bnra"
+                android:layout_marginLeft="@dimen/_110sdp"
+                android:scaleType="fitXY" />
+
+
+            <ImageView
+                android:background="@drawable/rectcart"
+                android:id="@+id/iv_gif_container1"
+                android:layout_width="130dp"
+                android:layout_height="270dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bnra"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_110sdp" />
+
+            <TextView
+                android:id="@+id/winter2"
+                android:layout_marginTop="-20dp"
+                android:layout_below="@+id/iv_gif_container1"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/ovalwinter"
+                android:fontFamily="@font/playfair_display"
+                android:padding="@dimen/_10sdp"
+                android:textAlignment="center"
+                android:text="Winter?"
+                android:textColor="#00E5FF"
+                android:textSize="@dimen/_22sdp" />
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            >
+
+            <TextView
+
+                style="@style/Heading"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:fontFamily="@font/playfair_display"
+                android:padding="@dimen/_2sdp"
+                android:text="Fashion as \n you like "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp" />
+
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

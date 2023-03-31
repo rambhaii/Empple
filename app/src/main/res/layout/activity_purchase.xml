@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckroundmain"
+    tools:context=".Purchase">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+
+        >
+
+        <ImageView
+            android:id="@+id/backrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+
+            />
+
+        <TextView
+            style="@style/Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="PURCHASE"
+            android:textSize="@dimen/_15ssp"
+
+            />
+        <TextView
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="@dimen/_8sdp"
+            android:textAlignment="center"
+            android:paddingStart="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_6sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_toLeftOf="@+id/imgcart"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/countback"
+            android:textColor="@color/red"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imgcart"
+            android:layout_marginTop="@dimen/_4sdp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_150sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR ORDER"
+            android:fontFamily="@font/josefin_sans"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#0A009B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACTIVATION"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/josefin_sans"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#0A009B"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/vcomm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="MEN"
+            android:fontFamily="@font/josefin_sans"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white"></TextView>
+
+
+
+        <TextView
+            android:id="@+id/allquestion"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="WOMEN"
+            android:fontFamily="@font/josefin_sans"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/mypost"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="KIDS"
+            android:fontFamily="@font/josefin_sans"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@color/white"></TextView>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sub Category Name"
+        android:fontFamily="@font/josefin_sans"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_15sdp" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sub Category Name"
+        android:fontFamily="@font/josefin_sans"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sub Category Name"
+        android:fontFamily="@font/josefin_sans"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sub Category Name"
+        android:fontFamily="@font/josefin_sans"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>

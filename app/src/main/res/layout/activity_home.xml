@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckroundmain"
+    tools:context=".home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/amily"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_marginRight="-15dp"
+                android:id="@+id/notif"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_toLeftOf="@+id/seting"
+                android:outlineSpotShadowColor="#FAF10A0A"
+                android:src="@drawable/notification"
+                app:backgroundTint="@color/white"
+                app:elevation="8sp"
+                app:tint="#CA0909"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/seting"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:outlineSpotShadowColor="#FA0A30F1"
+                android:src="@drawable/get"
+                app:backgroundTint="@color/white"
+                app:elevation="8sp"
+                app:tint="#0B0ED8"/>
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="-25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/sliderimage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_400sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:sliderAnimationDuration="2000"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorGravity="start|center"
+                app:sliderIndicatorMargin="@dimen/_10sdp"
+                app:sliderIndicatorOrientation="vertical"
+                app:sliderIndicatorPadding="@dimen/_2sdp"
+                app:sliderIndicatorRadius="@dimen/_1sdp"
+                app:sliderScrollTimeInSec="1"
+                app:sliderStartAutoCycle="true" />
+
+            <TextView
+                android:visibility="gone"
+                style="@style/Heading"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/playfair_display"
+                android:padding="@dimen/_2sdp"
+                android:text="New Collection"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_250sdp"
+                android:background="@drawable/ovalwinter"
+                android:fontFamily="@font/playfair_display"
+                android:padding="@dimen/_10sdp"
+                android:text="Winter?"
+                android:textColor="#00E5FF"
+                android:textSize="@dimen/_22sdp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_15sdp"
+            android:id="@+id/linerlayout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/wida"
+                    android:id="@+id/btn_clipboard"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/josefin_sans"
+                    android:text="Dashboard"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/shop"
+                    android:id="@+id/btn_purchase"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purchase"
+                    android:fontFamily="@font/josefin_sans"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_opinion"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/opinion" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opinion"
+                    android:fontFamily="@font/josefin_sans"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/quiz"
+                    android:id="@+id/btn_quiz"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quiz"
+                    android:fontFamily="@font/josefin_sans"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+      <!--  <Button
+              android:visibility="gone"
+            android:id="@+id/registernow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/register_now"
+            android:backgroundTint="@color/white"
+            app:tint="@color/white70"
+            android:fontFamily="@font/josefin_sans"
+            android:text="Register Now"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            android:textAllCaps="false"
+            android:textColor="#FCFFFFFF" />-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:fontFamily="@font/josefin_sans_bold"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_15sdp"
+                android:drawableRight="@drawable/next"
+                android:layout_marginLeft="@dimen/_95sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="Register now"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17sdp"/>
+            <com.smb.glowbutton.NeonButton
+           android:layout_marginTop="@dimen/_20sdp"
+           android:id="@+id/register"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_65sdp"
+           android:layout_gravity="center"
+           android:layout_marginStart="@dimen/_15sdp"
+           android:layout_marginEnd="@dimen/_15sdp"
+           android:fontFamily="@font/josefin_sans"
+           android:padding="@dimen/_1sdp"
+           android:textSize="@dimen/_14sdp"
+           app:nb_cornerRadius="@dimen/_5sdp"
+           app:nb_fontFamily="@font/josefin_sans"
+           app:nb_text="      "
+           android:textAlignment="center"
+           app:nb_textColor="@color/white"
+           app:nb_textStyle="bold"
+           app:nb_textSize="@dimen/_19sdp"
+           />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+

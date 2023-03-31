@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Emppl</string>
+    <string name="update_text_1">1.Fix Some Terrible Bugs</string>
+    <string name="update_text_2">2.New Navigation Interaction</string>
+    <string name="update_text_3">3.Improve Loading Experience</string>
+    <string name="update_text_4">4.Voice integrated Search in the app </string>
+    <string name="pass_content">Your new password must be different from previous used passwords </string>
+    <string name="verify">Enter the verification code we just sent you on your mobile number</string>
+    <string name="terms_condition"><u>  Terms &amp; Conditions</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="attention_error_title">Attention!</string>
+    <string name="successful_title">Successful!</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="change_password">Change Password</string>
+    <string name="hintusername"><font size="15">User Id or Email</font></string>
+    <string name="hintpassword"><font size="15">Password</font></string>
+    <string name="refer">REFER &amp; EARN</string>
+    <string name="rupee">\u20B9</string>
+    <string name="shop_earn">SHOP &amp; EARN</string>
+    <string name="montreal">What attraction in Montreal is one of the largest in the world? What attraction in Montreal is one of the largest in the world? What attraction in Montreal is one of the largest in the world? What attraction of the largest in the world? What attraction in Montreal is one of the largest in the world? What attraction of the largest in the world?</string>
+    <string name="passchange">Your new password must be different from previous used passwords</string>
+</resources>

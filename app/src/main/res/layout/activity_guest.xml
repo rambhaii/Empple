@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/videoimg"
+    tools:context=".Guest">
+
+
+    <TextView
+        android:id="@+id/browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_220sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="Browse"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_265sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_330sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:fontFamily="@font/josefin_sans"
+            android:text="Make your shopping"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:fontFamily="@font/josefin_sans"
+            android:text="enjoyable with us"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+
+        <com.smb.glowbutton.NeonButton
+            android:id="@+id/btin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/josefin_sans"
+            app:nb_fontFamily="@font/josefin_sans"
+            android:textSize="@dimen/_14sdp"
+            app:nb_cornerRadius="@dimen/_5sdp"
+            android:padding="@dimen/_1sdp"
+            app:nb_text="SIGN IN"
+            app:nb_textColor="@color/white" />
+
+        <com.smb.glowbutton.NeonButton
+            android:id="@+id/btup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/josefin_sans"
+            android:padding="@dimen/_1sdp"
+            android:textSize="@dimen/_14sdp"
+            app:nb_cornerRadius="@dimen/_5sdp"
+            app:nb_fontFamily="@font/josefin_sans"
+            app:nb_text="SIGN UP"
+            app:nb_textColor="@color/white" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

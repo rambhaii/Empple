@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sheet"
+    android:background="@color/white"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/josefin_sans"
+        android:text="Pick a refer link..."
+        android:textAlignment="center"
+        android:textColor="#370D9A"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+   <!-- <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="@font/josefin_sans"
+        android:hint="Reference User Id"
+        android:orientation="vertical"
+        android:textColor="@color/grey" />  -->
+
+    <TextView
+        android:id="@+id/usersid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:fontFamily="@font/josefin_sans"
+        android:text="User Id"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:background="@drawable/ic_pick"
+        android:fontFamily="@font/josefin_sans"
+        android:text="Pick"
+        android:textColor="@color/violet"
+        android:textStyle="bold" />
+</RelativeLayout>
